@@ -54,13 +54,18 @@ function Login() {
       <h1 className="justify-self-center justify-center font-bold text-3xl">
         DSA Login Page
       </h1>
-      <form className="max-w-md mx-auto mt-10 p-8 transparent rounded-xl shadow-lg" onSubmit={submit}>
+      <form
+        className="max-w-md mx-auto mt-10 p-8 transparent rounded-xl shadow-lg"
+        onSubmit={submit}
+      >
         <div>
           <h1 className="text-x1 font-bold text-center">Login</h1>
           <label className="block mb-2 text-sm font-medium text-gray-700">
             Email
           </label>
-          <input value={email} onChange={(e) => setEmail(e.target.value)}
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
             required
             className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -69,7 +74,9 @@ function Login() {
           <label className="block mt-4 mb-2 text-sm font-medium text-gray-700">
             Password
           </label>
-          <input value={password} onChange={(e) => setPassword(e.target.value)}
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             type="password"
             aria-placeholder="password"
             required
@@ -83,11 +90,13 @@ function Login() {
           >
             {isLoading ? "Logging in..." : "Login"}
           </button>
-          {error && (
-            <p className="mt-4 text-sm text-red-600">
-              {error}
-            </p>
-          )}
+          {error && <p className="mt-4 text-sm text-red-600">{error}</p>}
+          <p className="mt-4 text-sm text-gray-600">
+            Forgot Password?{" "}
+            <a href="/login" className="text-blue-700 hover:underline">
+              Reset
+            </a>
+          </p>
           <p className="mt-4 text-sm text-gray-600">
             Don't have an account?{" "}
             <a href="/register" className="text-blue-700 hover:underline">
