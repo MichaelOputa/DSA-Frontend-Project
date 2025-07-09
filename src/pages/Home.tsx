@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <i className="fas fa-laptop-code text-white text-2xl"></i>
-              <h1 className="text-white font-bold text-2xl">DSA Platform</h1>
+              <h1 className="text-white font-bold text-2xl">Mentify</h1>
             </div>
 
             <div className="flex space-x-4">
@@ -46,14 +46,13 @@ const Home: React.FC = () => {
             style={{ backgroundColor: "rgba(109, 40, 217, 0.7)" }}
           >
             <div className="container mx-auto px-4 text-center">
-              <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
-                Welcome to DSA Mentorship & Learning Platform
+              <h1 className="text-white text-6x1 md:text-5xl font-bold mb-1">
+                Welcome to DSA Platform.
               </h1>
-              <p className="text-white text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-               Dive in as you connect with experienced mentors who can guide you on your
-                journey to success. Whether you're starting your career or
-                looking to grow, we have the right mentors for you.
-              </p>
+              <h1 className="text-white text-1 md:text-4xl font-semibold mb-6">
+                Master Data Structures & Algorithms with Expert Mentorship
+                Connect with Industry Professionals & Boost Your Career
+              </h1>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a
                   href="/register"
